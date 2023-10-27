@@ -20,5 +20,5 @@ if st.button('Submit'):
     predict = model.predict(
         [[close, low, open, volume, adjClose, adjLow, adjOpen, adjVolume]]
     )
-    st.write('Apple Stock Price Dalam Ponds:', predict[0])
-    st.write('Apple Stock Price:', predict*1000)
+    st.write('Apple Stock Price:', predict*1000[0])
+
